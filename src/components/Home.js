@@ -16,7 +16,7 @@ const Home = () => {
 
         <figure className="hero-image" aria-hidden="false">
           <div className="profile-circle" role="img" aria-label="Profile photo">
-            <img src="/me.jpg" />
+            <img src="/me.jpg" alt="Profile photo" />
           </div>
         </figure>
       </section>

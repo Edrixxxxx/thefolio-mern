@@ -14,7 +14,13 @@ const contactRoutes = require('./routes/contact.routes');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://thefolio-mern.vercel.app",
+    "https://thefolio-mern-git-main-edrixxxxs-projects.vercel.app"
+  ],
+  credentials: true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
