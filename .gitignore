@@ -1,3 +1,22 @@
-node_modules
+# dependencies
+node_modules/
+
+# env files
 .env
-/build
+backend/.env
+frontend/.env
+
+# uploads (multer)
+uploads/
+backend/uploads/
+
+# build outputs
+build/
+dist/
+
+# logs
+*.log
+
+# OS / editor files
+.DS_Store
+.vscode/
