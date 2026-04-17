@@ -1,0 +1,29 @@
+/* Default Light Mode variables */
+:root {
+  --bg-color: #f4f4f9;
+  --text-color: #333;
+  --header-bg: #4e2c50;
+  --header-text: #fff;
+  /* ... other vars */
+}
+
+/* Dark Mode overrides */
+body.dark-mode {
+  --bg-color: #1a1a1a;
+  --text-color: #f4f4f9;
+  --header-bg: #2d1b30;
+  --header-text: #fff;
+  /* ... override other vars */
+}
+
+/* Apply variables to body/backgrounds */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.site-header {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+}
